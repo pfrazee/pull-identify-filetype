@@ -11,7 +11,7 @@ pull(
   identify(function (type) {
     console.log(type) // => string | false
   }),
-  /* sync */
+  /* sink */
 )
 ```
 
