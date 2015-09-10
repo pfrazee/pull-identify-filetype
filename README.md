@@ -1,5 +1,6 @@
 # pull-identify-filetype
 
+Identifies the file-type passing through the stream using the [magic-number signatures at the start of the file](http://en.wikipedia.org/wiki/list_of_file_signatures).
 
 ```js
 var pull = require('pull-stream')
