@@ -28,6 +28,6 @@
   "devDependencies": {
     "stream-to-pull-stream": "^1.6.6",
     "tape": "^4.2.0",
-    "test-files": "~1.0.0"
+    "test-files": "~1.0.1"
   }
 }

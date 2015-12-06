@@ -19,3 +19,13 @@ Object.keys(mns).forEach(function (mn) {
     )
   })
 })
+
+tape('identify: svg', function (t) {
+  pull(
+    tf.read('svg'),
+    ident(function (type) {
+      t.equal(type, 'svg')
+    }),
+    pull.onEnd(t.end.bind(t))
+  )
+})
