@@ -19,7 +19,7 @@ module.exports = function (cb) {
 
     // convert to string, check if svg
     var asStr = buf.slice(0, (buf.length > 512) ? 512 : buf.length).toString('utf-8')
-    if (asStr.indexOf('<svg') !== 0)
+    if (asStr.indexOf('<svg') !== -1)
       return cb('svg')
     
     cb(false)
