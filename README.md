@@ -44,6 +44,8 @@ pdf
 doc
 docx
 mp3
+svg
+html
 
 **Tested:**
 
@@ -63,3 +65,5 @@ tar
 doc
 rtf
 mov
+svg
+html

@@ -17,10 +17,12 @@ module.exports = function (cb) {
         return cb(mns[magicNumber])
     }
 
-    // convert to string, check if svg
+    // convert to string, check the plaintext types
     var asStr = buf.slice(0, (buf.length > 512) ? 512 : buf.length).toString('utf-8')
     if (asStr.indexOf('<svg') !== -1)
       return cb('svg')
+    if (asStr.indexOf('<html') !== -1)
+      return cb('html')
     
     cb(false)
   })

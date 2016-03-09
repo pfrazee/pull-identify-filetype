@@ -29,3 +29,13 @@ tape('identify: svg', function (t) {
     pull.onEnd(t.end.bind(t))
   )
 })
+
+tape('identify: html', function (t) {
+  pull(
+    tf.read('html'),
+    ident(function (type) {
+      t.equal(type, 'html')
+    }),
+    pull.onEnd(t.end.bind(t))
+  )
+})
